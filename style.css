@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(66, 66, 66);
+  position: relative;
+}
+
+#canvasOne {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid white 3px;
+  border-radius: 5px;
+  background-color: rgb(177, 177, 177);
+  max-height: 99%;
+}
+
+#warning {
+  display: none;
+  position: absolute;
+}
