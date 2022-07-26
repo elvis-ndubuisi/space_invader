@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,22 +8,32 @@
 
 body {
   height: 100vh;
-  background-color: rgb(66, 66, 66);
+  background-color: white;
+  position: relative;
+  height: 100vh;
+}
+#game {
+  max-width: 700px;
+  margin-inline: auto;
+  height: 100%;
   position: relative;
 }
 
-#canvasOne {
+#gameCanvas,
+#clickables {
   position: absolute;
   top: 50%;
   left: 50%;
+  height: 100%;
+  width: 100%;
   transform: translate(-50%, -50%);
-  border: solid white 3px;
-  border-radius: 5px;
-  background-color: rgb(177, 177, 177);
-  max-height: 99%;
 }
 
-#warning {
+#gameCanvas {
+  max-width: 400px;
+  background-color: rgb(10, 6, 6);
+}
+
+#clickables {
   display: none;
-  position: absolute;
 }
